@@ -4,7 +4,7 @@ import os
 import sys
 
 # Импортируем типы из enums
-from enums import WhisperModelSize
+from enums import EngineVoiceMode, WhisperModelSize
 
 # --- Настройки сервера ---
 WS_HOST = "localhost"
@@ -34,7 +34,8 @@ TECHNICAL_PROMPT = (
     "async, await, const, let, function, return, imports, exports."
 )
 
-# --- Триггеры по умолчанию ---
+# --- Режим и триггеры по умолчанию ---
+DEFAULT_ENGINE_MODE = EngineVoiceMode.AUTO
 DEFAULT_START_TRIGGERS = ["эни", "компьютер", "слушай", "начать запись", "старт", "джарвис"]
 DEFAULT_STOP_TRIGGERS = ["стоп", "готово", "конец сообщения", "хватит"]
 DEFAULT_SUBMIT_TRIGGERS = ["отправь", "отправить", "отправляй", "пошли", "отправить сообщение", "отправь сообщение"]

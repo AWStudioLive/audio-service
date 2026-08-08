@@ -13,5 +13,4 @@ class WhisperModelSize(str, Enum):
 
 class EngineVoiceMode(str, Enum):
     MANUAL = "manual"
-    CONTINUOUS = "continuous"
-    BOUNDED = "bounded"
+    AUTO = "auto"
